@@ -4,24 +4,28 @@ import java.util.Scanner;
 import static java.util.Arrays.fill;
 
 public class SudokuUtils {
-    public static String[] boardPieces ;
+    public static int dim =9;
 
-    public static void initialiseBoarPieces(){
+    public static String[] initialiseBoardPieces(){
         String[] BoardPieces = new String[81];
         fill(BoardPieces, ".");
-        boardPieces = BoardPieces;
+        return BoardPieces;
     }
-    public static void addPieces(){
+    public static void addPieces(String[] BoardPieces){
         System.out.println("PLEASE ENTER THE SUDOKU PUZZLE INTO THE DIAGRAM");
         System.out.println("ENTER THE ROW FOLLOWED BY THE COLLUMN FOLLOWED BY THE NUMBER");
         Scanner n = new Scanner(System.in);
         int row = n.nextInt();
         int column =n.nextInt();
         int number = n.nextInt();
-        System.out.println("row" + row);
-        System.out.println("col" + column);
-        System.out.println("num" +number);
-        System.out.println(n);
+        int position = (dim*(row-1))+(column-1);
+        BoardPieces[position] =String.valueOf(number);
+        System.out.println(BoardPieces[position]);
+
+    }
+
+    public static void main(String[] args) {
+        addPieces(initialiseBoardPieces());
     }
 
     

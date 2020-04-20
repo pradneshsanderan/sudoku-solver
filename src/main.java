@@ -1,8 +1,8 @@
 public class main {
     public static void main(String[] args) {
         //start game
-        SudokuUtils.initialiseBoarPieces();
-        SudokuUI.displayBoard(SudokuUtils.boardPieces);
+
+        SudokuUI.displayBoard(SudokuUtils.initialiseBoardPieces());
         //get an empty board
         //input the numbers
         // choose a button when done
