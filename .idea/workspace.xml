@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03bc6b7-af08-43bc-8d92-d962650ea6fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku/SudokuUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku/SudokuUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokuIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuIO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
