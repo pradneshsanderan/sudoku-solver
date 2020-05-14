@@ -19,18 +19,16 @@ public class main {
         switch (choice) {
             case 1:
                 SudokuUtils.addPieces(SudokuUtils.initialiseBoardPieces(SudokuUtils.boardPieces));
+                SudokuUtils.makeArrays();
                 boolean done = false;
                 while (!done){
                     SudokuUtils.addPieces(SudokuUtils.boardPieces);
                     Scanner n = new Scanner(System.in);
                     System.out.println("ARE YOU DONE?" +
                             "\n INPUT 'Y' FOR YES AND 'N' FOR NO");
-                    if(n.next().equals("Y")){
+                    if(n.next().toUpperCase().equals("Y")){
                         done = true;
                     }
-                }
-                for(int i=0;i<SudokuUtils.boardPieces.length;i++){
-                    System.out.println(SudokuUtils.boardPieces[i]);
                 }
                 break;
             case 0:
