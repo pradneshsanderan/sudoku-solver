@@ -19,7 +19,9 @@ public class main {
         switch (choice) {
             case 1:
                 SudokuUtils.addPieces(SudokuUtils.initialiseBoardPieces(SudokuUtils.boardPieces));
-                SudokuUtils.makeArrays();
+                SudokuUtils.setBoxArray();
+                SudokuUtils.setColArray();
+                SudokuUtils.setRowArray();
                 boolean done = false;
                 while (!done){
                     SudokuUtils.addPieces(SudokuUtils.boardPieces);
@@ -30,8 +32,21 @@ public class main {
                         done = true;
                     }
                 }
+                boolean over=false;
+                while(!over){
+                    SudokuUtils.fillInArrays();
+                    SudokuUtils.solvePuzzle();
+
+
+                    if(SudokuUtils.isGameOver()){
+                        over=true;
+                    }
+                }
+                SudokuUI.displayBoard(SudokuUtils.boardPieces);
+
                 break;
             case 0:
+
 
                 break;
             default:
