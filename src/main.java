@@ -18,7 +18,7 @@ public class main {
         }
         switch (choice) {
             case 1:
-                SudokuUtils.addPieces(SudokuUtils.initialiseBoardPieces(SudokuUtils.boardPieces));
+                //SudokuUtils.addPieces(SudokuUtils.initialiseBoardPieces(SudokuUtils.boardPieces));
                 SudokuUtils.setBoxArray();
                 SudokuUtils.setColArray();
                 SudokuUtils.setRowArray();
@@ -35,6 +35,7 @@ public class main {
                 boolean over=false;
                 while(!over){
                     SudokuUtils.fillInArrays();
+                    //SudokuUtils.initialiseEachBoxArray();
                     SudokuUtils.solvePuzzle();
 
 
@@ -65,4 +66,5 @@ public class main {
         // print the result
 
     }
+
 }
